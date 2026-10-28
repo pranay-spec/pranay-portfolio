@@ -113,34 +113,47 @@ export function ProjectVisual({ theme }: ProjectVisualProps) {
   if (theme === "intelligence") {
     // Parallax Edge: Hyperlocal Price Aggregator illustration
     return (
-      <div className="relative w-full h-full min-h-[220px] bg-[#0B0E14] border border-[#1E2633] rounded-lg p-4 flex flex-col justify-between">
-        <div className="flex items-center justify-between text-xs font-mono border-b border-[#1E2633] pb-2">
-          <div className="flex items-center gap-1.5">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#C5F36B]" />
-            <span className="text-white">AGGREGATOR_MATRIX</span>
+      <div className="relative w-full h-full min-h-[240px] bg-[#0B0E14] border border-[#1E2633] rounded-lg p-4 flex flex-col justify-between overflow-hidden shadow-inner">
+        {/* Top telemetry bar */}
+        <div className="flex items-center justify-between text-xs font-mono border-b border-[#1E2633] pb-2.5">
+          <div className="flex items-center gap-2">
+            <span className="h-2 w-2 rounded-full bg-[#C5F36B] animate-pulse" />
+            <span className="text-white font-medium">PRICE_INTELLIGENCE_ENGINE</span>
           </div>
-          <span className="text-[#64748B]">4 PLATFORMS ACTIVE</span>
+          <span className="text-[#C5F36B] bg-[#C5F36B]/10 px-2 py-0.5 rounded border border-[#C5F36B]/20 text-[10px]">
+            ACTIVE AGGREGATOR
+          </span>
         </div>
 
+        {/* Aggregated Platform Price Breakdown Rectangles */}
         <div className="space-y-2 py-3 font-mono text-xs">
-          <div className="flex items-center justify-between p-2 rounded bg-[#11151D] border border-[#1E2633]">
-            <span className="text-white">Blinkit (Quick-Commerce)</span>
+          <div className="flex items-center justify-between p-2.5 rounded-md bg-[#11151D] border border-[#1E2633] hover:border-[#C5F36B]/40 transition-colors">
             <div className="flex items-center gap-2">
-              <span className="text-[#64748B] text-[10px]">+₹25 surge</span>
+              <span className="h-1.5 w-1.5 rounded-full bg-[#C5F36B]" />
+              <span className="text-white font-medium">Blinkit (Quick-Commerce)</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-[#64748B] text-[10px]">+₹25 surge fee</span>
               <span className="text-[#C5F36B] font-semibold">₹249</span>
             </div>
           </div>
 
-          <div className="flex items-center justify-between p-2 rounded bg-[#11151D] border border-[#1E2633]">
-            <span className="text-white">Zepto (10-Min Delivery)</span>
+          <div className="flex items-center justify-between p-2.5 rounded-md bg-[#11151D] border border-[#1E2633] hover:border-[#1E2633]/80 transition-colors">
+            <div className="flex items-center gap-2">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#94A3B8]" />
+              <span className="text-[#CBD5E1]">Zepto (10-Min Delivery)</span>
+            </div>
             <div className="flex items-center gap-2">
               <span className="text-[#64748B] text-[10px]">+₹15 fee</span>
               <span className="text-white font-semibold">₹255</span>
             </div>
           </div>
 
-          <div className="flex items-center justify-between p-2 rounded bg-[#11151D] border border-[#1E2633]">
-            <span className="text-white">Amazon IN (Next-Day)</span>
+          <div className="flex items-center justify-between p-2.5 rounded-md bg-[#11151D] border border-[#1E2633] hover:border-[#1E2633]/80 transition-colors">
+            <div className="flex items-center gap-2">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#64748B]" />
+              <span className="text-[#94A3B8]">Amazon IN (Standard)</span>
+            </div>
             <div className="flex items-center gap-2">
               <span className="text-[#64748B] text-[10px]">Free Delivery</span>
               <span className="text-white font-semibold">₹235</span>
@@ -148,9 +161,13 @@ export function ProjectVisual({ theme }: ProjectVisualProps) {
           </div>
         </div>
 
-        <div className="flex items-center justify-between pt-2 border-t border-[#1E2633] text-[10px] font-mono text-[#64748B]">
-          <span>ANOMALY DETECTION: SURFACED</span>
-          <span className="text-[#C5F36B]">TRUE LANDED COST</span>
+        {/* Anomaly Detection Highlight Banner */}
+        <div className="flex items-center justify-between pt-2.5 border-t border-[#1E2633] text-[11px] font-mono">
+          <div className="flex items-center gap-1.5 text-[#C5F36B]">
+            <span className="font-semibold">ANOMALY DETECTED:</span>
+            <span className="text-white">SURGE VARIANCE +11.2%</span>
+          </div>
+          <span className="text-[#64748B]">LANDED COST ALGO</span>
         </div>
       </div>
     );
@@ -159,42 +176,49 @@ export function ProjectVisual({ theme }: ProjectVisualProps) {
   if (theme === "disinformation") {
     // Sentinel-X: Disinformation analysis radar & stream
     return (
-      <div className="relative w-full h-full min-h-[220px] bg-[#0B0E14] border border-[#1E2633] rounded-lg p-4 flex flex-col justify-between">
-        <div className="flex items-center justify-between text-xs font-mono border-b border-[#1E2633] pb-2">
-          <div className="flex items-center gap-1.5">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#C5F36B]" />
-            <span className="text-white">NLP_ANALYSIS_STREAM</span>
+      <div className="relative w-full h-full min-h-[240px] bg-[#0B0E14] border border-[#1E2633] rounded-lg p-4 flex flex-col justify-between overflow-hidden shadow-inner">
+        {/* Top telemetry bar */}
+        <div className="flex items-center justify-between text-xs font-mono border-b border-[#1E2633] pb-2.5">
+          <div className="flex items-center gap-2">
+            <span className="h-2 w-2 rounded-full bg-[#C5F36B] animate-pulse" />
+            <span className="text-white font-medium">SENTINEL_X_THREAT_RADAR</span>
           </div>
-          <span className="text-[#C5F36B] bg-[#C5F36B]/10 px-2 py-0.5 rounded text-[10px]">
-            STREAMLIT
+          <span className="text-[#C5F36B] bg-[#C5F36B]/10 px-2 py-0.5 rounded border border-[#C5F36B]/20 text-[10px]">
+            NLP LIVE STREAM
           </span>
         </div>
 
-        <div className="py-2 space-y-2">
-          <div className="p-2.5 rounded bg-[#11151D] border border-[#1E2633]">
-            <div className="flex justify-between items-center text-[11px] font-mono text-[#94A3B8] mb-1">
-              <span>Narrative Coherence Score</span>
-              <span className="text-[#C5F36B]">0.88</span>
+        {/* Structured Detection Metrics */}
+        <div className="py-2.5 space-y-2.5">
+          <div className="p-2.5 rounded-md bg-[#11151D] border border-[#1E2633]">
+            <div className="flex justify-between items-center text-[11px] font-mono text-[#94A3B8] mb-1.5">
+              <span className="text-white font-medium">Narrative Coherence Verification</span>
+              <span className="text-[#C5F36B] font-semibold">88.4% Confidence</span>
             </div>
-            <div className="w-full bg-[#1E2633] h-1.5 rounded-full overflow-hidden">
-              <div className="bg-[#C5F36B] h-full rounded-full" style={{ width: "88%" }} />
+            <div className="w-full bg-[#090B10] h-1.5 rounded-full overflow-hidden border border-[#1E2633]">
+              <div className="bg-[#C5F36B] h-full rounded-full" style={{ width: "88.4%" }} />
             </div>
           </div>
 
-          <div className="p-2.5 rounded bg-[#11151D] border border-[#1E2633]">
-            <div className="flex justify-between items-center text-[11px] font-mono text-[#94A3B8] mb-1">
-              <span>Sentiment Discrepancy Margin</span>
-              <span className="text-white">0.34</span>
+          <div className="p-2.5 rounded-md bg-[#11151D] border border-[#1E2633]">
+            <div className="flex justify-between items-center text-[11px] font-mono text-[#94A3B8] mb-1.5">
+              <span className="text-white font-medium">Cross-Platform Sentiment Discrepancy</span>
+              <span className="text-[#94A3B8] font-semibold">0.34 Index</span>
             </div>
-            <div className="w-full bg-[#1E2633] h-1.5 rounded-full overflow-hidden">
+            <div className="w-full bg-[#090B10] h-1.5 rounded-full overflow-hidden border border-[#1E2633]">
               <div className="bg-[#94A3B8] h-full rounded-full" style={{ width: "34%" }} />
             </div>
           </div>
         </div>
 
-        <div className="flex items-center justify-between pt-2 border-t border-[#1E2633] text-[10px] font-mono text-[#64748B]">
-          <span>VERIFIED NLP PIPELINE</span>
-          <span>CROSS-SOURCE CORRELATION</span>
+        {/* Threat Classification Summary Strip */}
+        <div className="grid grid-cols-2 gap-2 pt-2.5 border-t border-[#1E2633] text-[10px] font-mono">
+          <div className="text-[#94A3B8]">
+            PIPELINE: <span className="text-white">Structured NLP Stream</span>
+          </div>
+          <div className="text-right text-[#C5F36B]">
+            CORRELATION ENGINE ACTIVE
+          </div>
         </div>
       </div>
     );

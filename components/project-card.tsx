@@ -171,32 +171,35 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </div>
 
       {/* Action links */}
-      <div className="flex items-center gap-3 pt-4 border-t border-[#1E2633] text-xs font-mono">
-        {project.liveUrl ? (
-          <a
-            href={project.liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1 text-[#C5F36B] hover:text-[#D4F788] hover:underline"
-          >
-            <span>Live Application</span>
-            <ArrowUpRight className="w-3.5 h-3.5" />
-          </a>
-        ) : (
-          <span className="text-[#64748B] text-[11px]">
-            Repository Benchmark &amp; Experiments
-          </span>
-        )}
+      <div className="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-[#1E2633] text-xs font-mono">
+        <div className="flex items-center gap-2.5">
+          {project.liveUrl ? (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-4 py-2 rounded-md bg-[#C5F36B] text-[#090B10] font-mono font-semibold text-xs hover:bg-[#D4F788] transition-all shadow-sm hover:shadow-md hover:shadow-[#C5F36B]/20"
+            >
+              <span>Launch Live Demo</span>
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </a>
+          ) : (
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[#0D1017] border border-[#1E2633] text-[#64748B] text-[11px]">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#64748B]" />
+              <span>Benchmark &amp; Research</span>
+            </span>
+          )}
+        </div>
 
         <a
           href={project.githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="ml-auto flex items-center gap-1 text-[#94A3B8] hover:text-white"
+          className="flex items-center gap-1.5 px-3.5 py-2 rounded-md bg-[#161C27] hover:bg-[#1E2633] text-white border border-[#1E2633] hover:border-[#C5F36B]/40 font-mono text-xs transition-all"
         >
-          <GithubIcon className="w-3.5 h-3.5" />
-          <span>Source</span>
-          <ArrowUpRight className="w-3 h-3" />
+          <GithubIcon className="w-3.5 h-3.5 text-[#94A3B8]" />
+          <span>Source Code</span>
+          <ArrowUpRight className="w-3 h-3 text-[#64748B]" />
         </a>
       </div>
     </article>
