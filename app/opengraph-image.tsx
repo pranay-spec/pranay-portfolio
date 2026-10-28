@@ -94,7 +94,9 @@ export default async function Image() {
           }}
         >
           <span>Equinox Flow · Parallax Edge · Sentinel-X · Flash Crash Sentinel</span>
-          <span style={{ color: "#C5F36B" }}>pranaygujar.vercel.app</span>
+          <span style={{ color: "#C5F36B" }}>
+            {new URL(SITE_CONFIG.url).host}
+          </span>
         </div>
       </div>
     ),

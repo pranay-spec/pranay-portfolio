@@ -23,7 +23,7 @@ export function JsonLd() {
         description: SITE_CONFIG.description,
         url: baseUrl,
         email: `mailto:${SITE_CONFIG.email}`,
-        alumnusOf: {
+        alumniOf: {
           "@type": "CollegeOrUniversity",
           name: SITE_CONFIG.education.institution,
         },

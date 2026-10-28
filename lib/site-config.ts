@@ -6,7 +6,7 @@ export const SITE_CONFIG = {
     "From financial simulation to AI-powered intelligence, I turn ambitious ideas into working software.",
   description:
     "I'm Pranay, an Artificial Intelligence undergraduate at VIT Pune, building full-stack applications, machine-learning systems, and data-driven products.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://pranaygujar.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://pranay-portfolio-ivory.vercel.app",
   email: "pranaygujar685@gmail.com",
   phone: "8261058971",
   location: "Pune, Maharashtra, India",
