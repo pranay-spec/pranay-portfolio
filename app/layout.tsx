@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
   title: {
-    default: "Pranay Gujar · AI Engineer & Full-Stack Developer",
+    default: "Pranay Gujar | AI Engineer & Full-Stack Developer",
     template: "%s | Pranay Gujar",
   },
   description:
@@ -49,13 +49,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "Pranay Gujar Portfolio",
-    title: "Pranay Gujar · AI Engineer & Full-Stack Developer",
+    title: "Pranay Gujar | AI Engineer & Full-Stack Developer",
     description:
       "Artificial Intelligence undergraduate at VIT Pune building full-stack applications, machine-learning systems, and data-driven products.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pranay Gujar · AI Engineer & Full-Stack Developer",
+    title: "Pranay Gujar | AI Engineer & Full-Stack Developer",
     description:
       "Artificial Intelligence undergraduate at VIT Pune building full-stack applications, machine-learning systems, and data-driven products.",
   },
